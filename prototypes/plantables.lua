@@ -1,3 +1,7 @@
+local space_age_item_sounds = require("__space-age__.prototypes.item_sounds")
+local seconds = 60
+local minutes = 60*seconds
+
 local neutral_soils = {
 	"landfill",
 	"lowland-olive-blubber",
@@ -31,7 +35,38 @@ local neutral_soils = {
 	"pit-rock"
 }
 
-data.extend{
+local sunnycomb_plant = util.table.deepcopy(data.raw["tree"]["sunnycomb"])
+sunnycomb_plant.type = "plant"
+sunnycomb_plant.name = "sunnycomb-plant"
+sunnycomb_plant.flags = plant_flags
+sunnycomb_plant.hidden_in_factoriopedia = false
+sunnycomb_plant.factoriopedia_alternative = nil
+sunnycomb_plant.created_effect = nil
+sunnycomb_plant.harvest_emissions = {spores = 5}
+sunnycomb_plant.agricultural_tower_tint =
+{
+	primary = {r = 0.619, g = 0.518, b = 0.049, a = 1.000},
+	secondary = {r = 0.670, g = 0.556, b = 0.109, a = 1.000}
+}
+sunnycomb_plant.minable.results = {
+	{type = "item", name = "sunnycomb-seed", amount = 5}
+}
+sunnycomb_plant.growth_ticks = 8 * minutes
+sunnycomb_plant.surface_conditions = { {property = "pressure", min = 2000, max = 2000}}
+sunnycomb_plant.autoplace =
+{
+  probability_expression = 0,
+  -- required to show agricultural tower plots
+  tile_restriction = neutral_soils
+}
+
+data:extend({sunnycomb_plant})
+data.raw["tree"]["sunnycomb"].minable.results = {
+	{type = "item", name = "sunnycomb-seed", amount = 5}
+}
+
+
+data:extend{
 -- sunnycomb "propagule"?
   {
     type = "item",
@@ -51,8 +86,8 @@ data.extend{
 ]]
     subgroup = "agriculture-processes",
     order = "a[seeds]-a[sunnycomb-seed]",
-    plant_result = "sunnycomb",
-    place_result = "sunnycomb",
+    plant_result = "sunnycomb-plant",
+    place_result = "sunnycomb-plant",
     inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,

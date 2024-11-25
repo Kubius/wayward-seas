@@ -1,4 +1,29 @@
 
+3 > -1 > -2
+2 > -2 > -4
+1 > -3 > -6
+0 > -3 > -8
+
+3 > 1
+2 > 0
+1 > -1 > -2
+0 > -2 > -4
+
+higher values are more cutting
+
+you want values that are around zero, but not AT zero, to get spiked
+
+gleba-deep-lake
+
+ for k, chest in pairs (script_data.input_chests) do
+    if chest.valid then
+      chest.clear_items_inside()
+      chest.insert{name = script_data.round_input, count = 10000}
+    else
+      table.remove(script_data.input_chests, k)
+    end
+  end
+
 --add to gleba planet discovery.
 --better would be a technology that unlocks on gathering them, but more art yech
 {type = "unlock-recipe",recipe = "sunnycomb-processing",}
