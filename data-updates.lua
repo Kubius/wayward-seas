@@ -1,0 +1,1 @@
+require("__wayward-seas__/prototypes/plantables")
