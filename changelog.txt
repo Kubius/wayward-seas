@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+
+  Changes:
+    - Quick buff to the simple crops (1 > 2 bacteria yield, doubled fuel value, increased spoilage yield).
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 
   Changes:

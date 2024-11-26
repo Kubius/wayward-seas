@@ -160,7 +160,7 @@ data:extend{
     stack_size = 50,
     default_import_location = "gleba",
     fuel_category = "chemical",
-    fuel_value = "2MJ"
+    fuel_value = "4MJ"
   },
 -- mulch the propagule, get spoilage and bacteria
   {
@@ -176,8 +176,8 @@ data:extend{
     ingredients = {{type = "item", name = "sunnycomb-seed", amount = 1}},
     results =
     {
-      {type = "item", name = "spoilage", amount = 3},
-      {type = "item", name = "copper-bacteria", amount = 1}
+      {type = "item", name = "spoilage", amount = 8},
+      {type = "item", name = "copper-bacteria", amount = 2}
     },
     crafting_machine_tint =
     {
@@ -208,7 +208,7 @@ data:extend{
   stack_size = 50,
   default_import_location = "gleba",
   fuel_category = "chemical",
-  fuel_value = "2MJ"
+  fuel_value = "4MJ"
 },
 {
   type = "recipe",
@@ -223,8 +223,8 @@ data:extend{
   ingredients = {{type = "item", name = "cuttlepop-seed", amount = 1}},
   results =
   {
-    {type = "item", name = "spoilage", amount = 4},
-    {type = "item", name = "iron-bacteria", amount = 1}
+    {type = "item", name = "spoilage", amount = 10},
+    {type = "item", name = "iron-bacteria", amount = 2}
   },
   crafting_machine_tint =
   {
