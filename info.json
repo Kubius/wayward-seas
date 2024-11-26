@@ -4,10 +4,11 @@
   "factorio_version": "2.0",
   "title": "On Wayward Seas",
   "author": "Kubius",
-  "description": "Overhauls Gleba into an archipelagic planet, with new resource chains to ensure it's still viable in a fresh start.",
+  "description": "This time, you can bring a hammock. Overhauls Gleba into an archipelagic planet, with expanded planting options for more versatility and a simpler early-game.",
   "dependencies": [
     "base >= 2.0.7",
     "space-age",
-	  "cargo-ships"
+	  "cargo-ships",
+    "dredgeworks"
   ]
 }

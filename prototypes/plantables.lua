@@ -80,7 +80,7 @@ cuttlepop_plant.flags = plant_flags
 cuttlepop_plant.hidden_in_factoriopedia = false
 cuttlepop_plant.factoriopedia_alternative = nil
 cuttlepop_plant.created_effect = nil
-cuttlepop_plant.harvest_emissions = {spores = 5}
+cuttlepop_plant.harvest_emissions = {spores = 3}
 cuttlepop_plant.agricultural_tower_tint =
 {
 	primary = {r = 0.769, g = 0.615, b = 0.823, a = 1.000},
@@ -190,17 +190,14 @@ data:extend{
   name = "cuttlepop-seed",
   localised_name = {"item-name.cuttlepop-seed"},
   localised_description = {"item-description.cuttlepop-seed"},
-  icon = "__space-age__/graphics/icons/cuttlepop.png",
---[[
-  icon = "__wayward-seas__/graphics/icons/cuttlepop-seed.png",
+  icon = "__wayward-seas__/graphics/icons/cuttlepop-pod-1.png",
   pictures =
   {
-    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-seed-1.png", scale = 0.5, mipmap_count = 4 },
-    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-seed-2.png", scale = 0.5, mipmap_count = 4 },
-    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-seed-3.png", scale = 0.5, mipmap_count = 4 },
-    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-seed-4.png", scale = 0.5, mipmap_count = 4 },
+    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-1.png", scale = 0.5},
+    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-2.png", scale = 0.5},
+    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-3.png", scale = 0.5},
+    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-4.png", scale = 0.5},
   },
-]]
   subgroup = "agriculture-processes",
   order = "a[seeds]-a[cuttlepop-seed]",
   plant_result = "cuttlepop-plant",
