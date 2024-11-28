@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+
+  Changes:
+    - Buffed watercane cultivation to make it narrowly ahead of cuttlepop in raw fuel value (grow time 3m > 2m15s, 2-3 wood instead of 2).
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 
   Changes:

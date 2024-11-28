@@ -117,9 +117,9 @@ watercane_plant.agricultural_tower_tint =
 	secondary = {r = 0.764, g = 0.525, b = 0.263, a = 1.000}
 }
 watercane_plant.minable.results = {
-	{type = "item", name = "wood", amount = 2}
+	{type = "item", name = "wood", amount_min = 2, amount_max = 3}
 }
-watercane_plant.growth_ticks = 3 * minutes
+watercane_plant.growth_ticks = 135 * seconds
 watercane_plant.surface_conditions = { {property = "pressure", min = 2000, max = 2000} }
 watercane_plant.tile_buildability_rules = {
   {
