@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+
+  Changes:
+    - Add lakebed mulch, an artificial "water soil" that raises Gleban deep lakebed into shallows suitable for walking or simple-crop cultivation.
+    - Remove landfill prohibition on deep lake (stone cost is already enough of a downside vs. refined concrete).
+    - With lakebed mulch providing a new way to extend footpaths, Cargo Ships is no longer marked as required, though it remains heavily recommended.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 
   Changes:
