@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+
+  Changes:
+    - Added missing weight parameter to the simple crops and returned their direct-burn fuel value to original (2MJ).
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 
   Changes:

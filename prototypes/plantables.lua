@@ -158,9 +158,10 @@ data:extend{
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 50,
+    weight = 1 * kg,
     default_import_location = "gleba",
     fuel_category = "chemical",
-    fuel_value = "4MJ"
+    fuel_value = "2MJ"
   },
 -- mulch the propagule, get spoilage and bacteria
   {
@@ -206,9 +207,10 @@ data:extend{
   pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
   drop_sound = space_age_item_sounds.agriculture_inventory_move,
   stack_size = 50,
+  weight = 1 * kg,
   default_import_location = "gleba",
   fuel_category = "chemical",
-  fuel_value = "4MJ"
+  fuel_value = "3MJ"
 },
 {
   type = "recipe",
