@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+
+  Changes:
+    - Enabled simple organic crafting processes (such as sunnycomb and cuttlepop seed processing) in assembling machine 1 for easier fresh starts.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 
   Changes:
