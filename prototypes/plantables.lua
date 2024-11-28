@@ -176,7 +176,7 @@ data:extend{
     ingredients = {{type = "item", name = "sunnycomb-seed", amount = 1}},
     results =
     {
-      {type = "item", name = "spoilage", amount = 8},
+      {type = "item", name = "spoilage", amount = 3},
       {type = "item", name = "copper-bacteria", amount = 2}
     },
     crafting_machine_tint =
@@ -223,7 +223,7 @@ data:extend{
   ingredients = {{type = "item", name = "cuttlepop-seed", amount = 1}},
   results =
   {
-    {type = "item", name = "spoilage", amount = 10},
+    {type = "item", name = "spoilage", amount = 4},
     {type = "item", name = "iron-bacteria", amount = 2}
   },
   crafting_machine_tint =

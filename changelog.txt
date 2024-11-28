@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+
+  Changes:
+    - Dialed back spoilage yield from sunnycomb and cuttlepop to line up better with the sink from ore smelting (not full consumption, but much closer)
+
+---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 
   Changes:
