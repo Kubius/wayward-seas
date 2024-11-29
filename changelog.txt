@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+
+  Changes:
+    - Cleaned up unnecessary cloning of autoplace settings on new crops.
+    - Improved stone patch richness 2x and halved highlands stone bonus from 10x to 5x.
+    - Increased contiguity of stone patches and moved them slightly deeper into water on average (some will still be close to shore).
+    - Stone patches that are more deeply submerged receive a moderate bonus to richness.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 
   Changes:

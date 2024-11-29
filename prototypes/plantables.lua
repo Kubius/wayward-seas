@@ -68,6 +68,7 @@ sunnycomb_plant.tile_buildability_rules = {
     remove_on_collision = true
   }
 }
+sunnycomb_plant.autoplace = nil
 data:extend({sunnycomb_plant})
 data.raw["tree"]["sunnycomb"].minable.results = {
 	{type = "item", name = "sunnycomb-seed", amount = 5}
@@ -99,6 +100,7 @@ cuttlepop_plant.tile_buildability_rules = {
     remove_on_collision = true
   }
 }
+cuttlepop_plant.autoplace = nil
 data:extend({cuttlepop_plant})
 data.raw["tree"]["cuttlepop"].minable.results = {
 	{type = "item", name = "cuttlepop-seed", amount = 3}
@@ -129,6 +131,7 @@ watercane_plant.tile_buildability_rules = {
     remove_on_collision = true
   }
 }
+watercane_plant.autoplace = nil
 data:extend({watercane_plant})
 
 data.raw["item"]["wood"].plant_result = "water-cane-plant"
