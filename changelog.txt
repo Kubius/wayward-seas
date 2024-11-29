@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+
+  Changes:
+    - Fixed an error in stone patch depth bonus structure that was causing stone patches to generate at low density in places they shouldn't generate at all.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 
   Changes:
