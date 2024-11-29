@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+
+  Changes:
+    - Substantially reduced spore production from the simple crops (5 > 2 for sunnycomb, 3 > 1 for cuttlepop).
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 
   Changes:
