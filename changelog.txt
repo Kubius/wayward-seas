@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+
+  Changes:
+    - Introduced fungal productivity, allowing you to more efficiently process the basic crops for improved yield. Early levels are very quick to acquire, and useful for Gleba starts.
+    - Increased water cane yield again so it's ahead in raw fuel value for real this time. Now always yields 3 wood (putting it at ~0.89 net yield a minute vs. the other crops' 0.75).
+    - Corrected a description error in cuttlepop (spore pod, not seed pod) and slightly updated main description.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 
   Changes:

@@ -1,10 +1,10 @@
 {
   "name": "wayward-seas",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "factorio_version": "2.0",
   "title": "On Wayward Seas",
   "author": "Kubius",
-  "description": "This time, you can bring a hammock. Overhauls Gleba into an archipelagic planet, with expanded planting options for more versatility and a simpler early-game.",
+  "description": "This time, you can bring a hammock. Overhauls Gleba into an archipelagic planet, with expanded planting options for more versatility and a simpler early-game. Boats recommended.",
   "dependencies": [
     "base >= 2.0.7",
     "space-age",
