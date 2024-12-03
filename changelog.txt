@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+
+  Changes:
+    - Updated world generation revision config to make available revisions clearer.
+    - Added a config option to disable Wayward Seas world generation entirely; this is not recommended for fresh saves, but allows trying new features in a previously-vanilla save.
+    - Update info file to indicate mod is for Space Age in the mod portal.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 
   Changes:
