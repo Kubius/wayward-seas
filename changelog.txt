@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+
+  Changes:
+    - Substantially increased the area around the starting area that is safe from pentapod spawns; it was previously decreased incidentally through other worldgen changes.
+    - Altered core world generation to increase the scale of highlands, and overall rebalance terrain distribution for a more consistent experience on default settings.
+    - The core world generation change is NOT compatible with existing worlds; select version 1 world generation in startup settings for backwards compatibility.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 
   Changes:
