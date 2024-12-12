@@ -27,23 +27,18 @@ data:extend{
     icon = "__wayward-seas__/graphics/technology/swampfill-tech.png",
     icon_size = 256,
     prerequisites = {"agriculture","landfill"},
-    unit =
-    {
-      count = 20,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
-      },
-      time = 15
-    },
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "lakebed-mulch"
       }
-    }
+    },
+    research_trigger =
+    {
+      type = "craft-item",
+      item = "agricultural-tower"
+    },
   },
   {
     type = "recipe",

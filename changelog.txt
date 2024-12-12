@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+
+  Changes:
+    - Lakebed mulch is now unlocked by crafting the agricultural tower.
+    - Lakebed mulch is now a valid planting target for slipstacks from the Slipstack Agriculture mod.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.4.1
 
   Changes:
