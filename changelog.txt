@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+
+  Changes:
+    - Introduced resin processing, a new production chain to make manufacture of basic explosives and general defenses more approachable (particularly for Gleba starts).
+    - As you break down local flora for copper bacteria, you clue into a sunnycomb constituent capable of being processed into a more acutely combustible form (that doesn't explode in your face like boompuff).
+    - One wood and one sunnycomb propagule, processed with 150 water and 50 steam, provides you with 150 volatile resin.
+    - Assembling machines of tier 2 and above can produce grenades using 500 volatile resin and 5 iron plates.
+    - Chemical plants and biochambers can combine 200 volatile resin with 1 sulfur and 2 carbon to produce 2 explosives.
+    - Volatile resin can also be used by flamethrower turrets; its slightly sticky properties make it quite effective, but impractical to package for portable flamethrower ammo.
+    - An additional researchable technology allows you to directly produce rockets from resin, enabling local agricultural production of rockets anywhere on the planet.
+    - Direct resin rocket production costs 150 resin instead of 1 explosive, and takes 2x the manufacture time per rocket.
+    - Any Planet Start is now an optional dependency, to cancel its addition of sulfur processing as a military science pack prerequisite due to new grenade acquisition.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.4.2
 
   Changes:
