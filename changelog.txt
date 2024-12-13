@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+
+  Changes:
+    - Change set mainly focused on improving the capabilities of volatile resin for supplying local defenses at shallows chokepoints.
+    - Volatile resin now produces 250 resin per batch at baseline, up from 150.
+    - Volatile resin and resin-based rockets now benefit from the fungal productivity research. Each receive a 10% productivity bonus per tier.
+    - For "conservation of mass" after productivity enters play, affected recipes were adjusted a bit:
+    - Volatile resin fluid inputs (water and steam) were increased notably (150/50 > 500/100).
+    - Resin-based rockets now cost an additional iron plate.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 
   Changes:

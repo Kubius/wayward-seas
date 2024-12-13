@@ -14,6 +14,16 @@ data:extend{
         type = "change-recipe-productivity",
         recipe = "sunnycomb-processing",
         change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "gleba-resin",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "resin-rocket",
+        change = 0.1
       }
     },
     prerequisites = {"agriculture", "logistic-science-pack"},
@@ -43,6 +53,16 @@ data:extend{
       {
         type = "change-recipe-productivity",
         recipe = "sunnycomb-processing",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "gleba-resin",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "resin-rocket",
         change = 0.1
       }
     },
@@ -74,6 +94,16 @@ data:extend{
       {
         type = "change-recipe-productivity",
         recipe = "sunnycomb-processing",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "gleba-resin",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "resin-rocket",
         change = 0.1
       }
     },
@@ -107,6 +137,16 @@ data:extend{
         type = "change-recipe-productivity",
         recipe = "sunnycomb-processing",
         change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "gleba-resin",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "resin-rocket",
+        change = 0.1
       }
     },
     prerequisites = {"fungal-productivity-3", "production-science-pack"},
@@ -139,6 +179,16 @@ data:extend{
       {
         type = "change-recipe-productivity",
         recipe = "sunnycomb-processing",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "gleba-resin",
+        change = 0.1
+      },
+      {
+        type = "change-recipe-productivity",
+        recipe = "resin-rocket",
         change = 0.1
       }
     },

@@ -29,12 +29,12 @@ data:extend{
     {
       {type = "item", name = "sunnycomb-seed", amount = 1},
       {type = "item", name = "wood", amount = 1},
-      {type = "fluid", name = "water", amount = 150},
-      {type = "fluid", name = "steam", amount = 50}
+      {type = "fluid", name = "water", amount = 500},
+      {type = "fluid", name = "steam", amount = 100}
     },
     results =
     {
-      {type = "fluid", name = "gleba-resin", amount = 150}
+      {type = "fluid", name = "gleba-resin", amount = 250}
     },
     allow_productivity = true,
     crafting_machine_tint =
@@ -117,7 +117,7 @@ data:extend{
     category = "crafting-with-fluid",
     ingredients =
     {
-      {type = "item", name = "iron-plate", amount = 2},
+      {type = "item", name = "iron-plate", amount = 3},
       {type = "fluid", name = "gleba-resin", amount = 150}
     },
     results = {{type="item", name="rocket", amount=1}}
