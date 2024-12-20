@@ -5,10 +5,6 @@ require("__wayward-seas__/prototypes/placement_adjust")
 
 table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories,"organic-or-hand-crafting")
 
-if mods["slipstacks"] then
-    table.insert(data.raw["plant"]["slipstack-plant"].autoplace.tile_restriction,"raised-lakebed")
-end
-
 if mods["any-planet-start"] then
     local miltech = data.raw["technology"]["military-science-pack"].prerequisites
     for indexer, prerequisite in pairs(miltech) do

@@ -1,6 +1,6 @@
 {
   "name": "wayward-seas",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "factorio_version": "2.0",
   "title": "On Wayward Seas",
   "author": "Kubius",
@@ -10,7 +10,7 @@
     "base >= 2.0.7",
     "space-age",
     "dredgeworks",
-    "? slipstacks",
-    "? any-planet-start"
+    "? any-planet-start",
+    "? cargo-ships"
   ]
 }

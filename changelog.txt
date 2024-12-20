@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.2
+
+  Changes:
+    - Reintroduced Cargo Ships as a dependency (optional this time) for improved discoverability.
+    - Removed slipstack plantability adjustment (now done on that mod's end).
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.1
 
   Changes:
