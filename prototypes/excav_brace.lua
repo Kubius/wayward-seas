@@ -1,5 +1,28 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 
+local excavation_brace_research = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"space-science-pack", 1},
+  {"agricultural-science-pack", 1},
+}
+local excavation_brace_ticks = 500
+local excavation_brace_prereq = {"lakebed-mulch","concrete","agricultural-science-pack"}
+
+if mods["any-planet-start"] then
+  local planet = settings.startup["aps-planet"].value
+  if planet == "gleba" then
+    excavation_brace_research = {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"military-science-pack", 1},
+    }
+    excavation_brace_ticks = 250
+    excavation_brace_prereq = {"lakebed-mulch","concrete","military-science-pack"}
+  end
+end
+
 data:extend{
   {
     type = "item",
@@ -25,7 +48,7 @@ data:extend{
     name = "excavation-brace",
     icon = "__wayward-seas__/graphics/technology/excavation-brace.png",
     icon_size = 256,
-    prerequisites = {"lakebed-mulch","concrete"},
+    prerequisites = excavation_brace_prereq,
     effects =
     {
       {
@@ -35,14 +58,8 @@ data:extend{
     },
     unit =
     {
-      count = 100,
-      ingredients =
-      {
-        {"automation-science-pack", 2},
-        {"logistic-science-pack", 2},
-        {"chemical-science-pack", 1},
-        {"agricultural-science-pack", 1},
-      },
+      count = excavation_brace_ticks,
+      ingredients = excavation_brace_research,
       time = 30
     },
   },

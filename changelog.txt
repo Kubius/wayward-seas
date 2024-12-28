@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.4
+
+  Changes:
+    - Adjusted excavation brace research cost to differ between Gleba start and other-planet starts.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.3
 
   Changes:
