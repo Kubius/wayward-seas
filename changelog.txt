@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.3
+
+  Changes:
+    - Excavation braces, a new item and technology, "anchor" Gleba's squishy shallows to force them deeper, allowing you to create moats and sever parts of island chains.
+    - Excavation brace recipe yield can be adjusted in config to tune the balance to your liking.
+    - Added the Ironclad as an optional dependency for improved discoverability.
+    - New playthroughs will now check if recommended mods are present, and inform you if they are not.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.2
 
   Changes:
