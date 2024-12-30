@@ -21,7 +21,7 @@ script.on_event(e.on_player_created, function(event)
       if game.is_multiplayer() then
         game.print(gleba_start_checkup())
       else
-        if not script.active_mods["cargo-ships"] or (script.active_mods["any-planet-start"] and (not script.active_mods["aai-vehicles-ironclad"])) then
+        if not script.active_mods["cargo-ships"] or (script.active_mods["any-planet-start"] and settings.startup["aps-planet"].value == "gleba" and (not script.active_mods["aai-vehicles-ironclad"])) then
           game.show_message_dialog{text = gleba_start_checkup()}
         else
           game.print(gleba_start_checkup())

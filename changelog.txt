@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.5
+
+  Changes:
+    - Excavation brace can now be disabled in config for players who don't like its effect on game balance or feel.
+    - If excavation braces are disabled when already in use, existing trenches won't be destroyed but will yield one iron stick when dug (avoids breaking things).
+    - Adjusted one of the warnings for lack of companion mod (Ironclad) to go "full-screen" only when Any Planet Start is calibrated to Gleba, rather than merely installed.
+    - Moved most prototype setup to data phase.
+    - Added versions to certain dependencies.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.4
 
   Changes:
