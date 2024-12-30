@@ -15,5 +15,5 @@ end
 legally_distinct_lake.mined_sound = item_sounds.landfill_inventory_pickup
 legally_distinct_lake.layer = 5
 legally_distinct_lake.build_sound = data.raw["tile"]["concrete"].build_sound
-legally_distinct_lake.map_color = {12,8,21}
+legally_distinct_lake.map_color = {15,14,42}
 data:extend({legally_distinct_lake})

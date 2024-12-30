@@ -3,7 +3,7 @@ data:extend{
         type = "bool-setting",
         name = "enable_excav_brace",
         setting_type = "startup",
-        default_value = true,
+        default_value = false,
         order = "c-a"
     },
     {
