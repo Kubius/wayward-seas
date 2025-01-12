@@ -30,4 +30,11 @@ data:extend{
         default_value = true,
         order = "c-d"
     },
+    {
+        type = "bool-setting",
+        name = "soil_fertility_tweaks",
+        setting_type = "startup",
+        default_value = true,
+        order = "c-e"
+    },
 }

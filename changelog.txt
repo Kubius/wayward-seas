@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+
+  Changes:
+    - Introduced new procedures for soil fertility adjustment, making it respond better to water coverage. "Richness" refers to how much of the wetland is natural soil.
+    - High water coverage now scales up the coverage/richness of fertile soils/wetlands. All water coverage levels are now playable, though 600% is not recommended as it does odd things to scaling.
+    - Low water coverage no longer has patches quite as vast as before, but their richness hasn't decreased.
+    - Default coverage (100%) only has minor changes to the starting area, and should be seamlessly compatible with existing 100% coverage saves.
+    - If you are not on default coverage and want to preserve your exact world generation, changes in this update can be disabled with the "Soil fertility tweaks" config setting.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.6
 
   Changes:
