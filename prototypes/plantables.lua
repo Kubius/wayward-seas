@@ -36,6 +36,12 @@ local neutral_soils = {
 	"pit-rock"
 }
 
+local only_gleba = false
+if mods["onlyGleba"] then
+  only_gleba = true
+end
+
+
 data:extend({{type = "collision-layer", name = "neutral_soil"}})
 
 for _,target_tile in pairs(neutral_soils) do 
@@ -174,7 +180,8 @@ data:extend{
     category = "organic-or-hand-crafting",
     subgroup = "agriculture-processes",
     order = "a[seeds]-a[sunnycomb-processing]",
-    enabled = false,
+    enabled = only_gleba,
+    allow_decomposition = false,
     allow_productivity = true,
     energy_required = 0.5,
     ingredients = {{type = "item", name = "sunnycomb-seed", amount = 1}},
@@ -222,7 +229,8 @@ data:extend{
   category = "organic-or-hand-crafting",
   subgroup = "agriculture-processes",
   order = "a[seeds]-a[cuttlepop-processing]",
-  enabled = false,
+  enabled = only_gleba,
+  allow_decomposition = false,
   allow_productivity = true,
   energy_required = 0.5,
   ingredients = {{type = "item", name = "cuttlepop-seed", amount = 1}},
@@ -239,11 +247,13 @@ data:extend{
 },
 }
 
-data.raw.technology["planet-discovery-gleba"].effects[2] = {
-  type = "unlock-recipe",
-  recipe = "sunnycomb-processing",
-}
-data.raw.technology["planet-discovery-gleba"].effects[3] = {
-  type = "unlock-recipe",
-  recipe = "cuttlepop-processing",
-}
+if not only_gleba then
+  data.raw.technology["planet-discovery-gleba"].effects[2] = {
+    type = "unlock-recipe",
+    recipe = "sunnycomb-processing",
+  }
+  data.raw.technology["planet-discovery-gleba"].effects[3] = {
+    type = "unlock-recipe",
+    recipe = "cuttlepop-processing",
+  }
+end

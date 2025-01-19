@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.1
+
+  Changes:
+    - Only Gleba compatibility: Cuttlepop and sunnycomb processing are unlocked by default with Only Gleba active.
+    - Cuttlepop and sunnycomb processing no longer allow decomposition for tooltip costs.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 
   Changes:
