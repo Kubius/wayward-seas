@@ -125,7 +125,7 @@ watercane_plant.agricultural_tower_tint =
 	secondary = {r = 0.764, g = 0.525, b = 0.263, a = 1.000}
 }
 watercane_plant.minable.results = {
-	{type = "item", name = "wood", amount = 3}
+	{type = "item", name = "cut-water-cane", amount = 3}
 }
 watercane_plant.growth_ticks = 135 * seconds
 watercane_plant.surface_conditions = { {property = "pressure", min = 2000, max = 2000} }
@@ -140,9 +140,9 @@ watercane_plant.tile_buildability_rules = {
 watercane_plant.autoplace = nil
 data:extend({watercane_plant})
 
-data.raw["item"]["wood"].plant_result = "water-cane-plant"
-data.raw["item"]["wood"].place_result = "water-cane-plant"
-data.raw["item"]["wood"].localised_name = {"item-name.wood"}
+data.raw["tree"]["water-cane"].minable.results = {
+	{type = "item", name = "cut-water-cane", amount = 2}
+}
 
 data:extend{
 -- sunnycomb "propagule"?
@@ -160,7 +160,7 @@ data:extend{
       { size = 64, filename = "__wayward-seas__/graphics/icons/sunnycomb-seed-4.png", scale = 0.5 },
     },
     subgroup = "agriculture-processes",
-    order = "a[seeds]-a[sunnycomb-seed]",
+    order = "a[seeds]-a-a[sunnycomb-seed]",
     plant_result = "sunnycomb-plant",
     place_result = "sunnycomb-plant",
     inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
@@ -179,7 +179,7 @@ data:extend{
     icon = "__wayward-seas__/graphics/icons/sunnycomb-processing.png",
     category = "organic-or-hand-crafting",
     subgroup = "agriculture-processes",
-    order = "a[seeds]-a[sunnycomb-processing]",
+    order = "a[seeds]-a-a[sunnycomb-processing]",
     enabled = only_gleba,
     allow_decomposition = false,
     allow_productivity = true,
@@ -193,58 +193,105 @@ data:extend{
     crafting_machine_tint =
     {
       primary = {r = 0.619, g = 0.518, b = 0.049, a = 1.000},
-	  secondary = {r = 0.670, g = 0.556, b = 0.109, a = 1.000}
+	    secondary = {r = 0.670, g = 0.556, b = 0.109, a = 1.000}
     }
   },
-{
-  type = "item",
-  name = "cuttlepop-seed",
-  localised_name = {"item-name.cuttlepop-seed"},
-  localised_description = {"item-description.cuttlepop-seed"},
-  icon = "__wayward-seas__/graphics/icons/cuttlepop-pod-1.png",
-  pictures =
   {
-    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-1.png", scale = 0.5},
-    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-2.png", scale = 0.5},
-    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-3.png", scale = 0.5},
-    { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-4.png", scale = 0.5},
+    type = "item",
+    name = "cuttlepop-seed",
+    localised_name = {"item-name.cuttlepop-seed"},
+    localised_description = {"item-description.cuttlepop-seed"},
+    icon = "__wayward-seas__/graphics/icons/cuttlepop-pod-1.png",
+    pictures =
+    {
+      { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-1.png", scale = 0.5},
+      { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-2.png", scale = 0.5},
+      { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-3.png", scale = 0.5},
+      { size = 64, filename = "__wayward-seas__/graphics/icons/cuttlepop-pod-4.png", scale = 0.5},
+    },
+    subgroup = "agriculture-processes",
+    order = "a[seeds]-a-b[cuttlepop-seed]",
+    plant_result = "cuttlepop-plant",
+    place_result = "cuttlepop-plant",
+    inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+    pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+    drop_sound = space_age_item_sounds.agriculture_inventory_move,
+    stack_size = 50,
+    weight = 1 * kg,
+    default_import_location = "gleba",
+    fuel_category = "chemical",
+    fuel_value = "3MJ"
   },
-  subgroup = "agriculture-processes",
-  order = "a[seeds]-a[cuttlepop-seed]",
-  plant_result = "cuttlepop-plant",
-  place_result = "cuttlepop-plant",
-  inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
-  pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
-  drop_sound = space_age_item_sounds.agriculture_inventory_move,
-  stack_size = 50,
-  weight = 1 * kg,
-  default_import_location = "gleba",
-  fuel_category = "chemical",
-  fuel_value = "3MJ"
-},
-{
-  type = "recipe",
-  name = "cuttlepop-processing",
-  icon = "__wayward-seas__/graphics/icons/cuttlepop-processing.png",
-  category = "organic-or-hand-crafting",
-  subgroup = "agriculture-processes",
-  order = "a[seeds]-a[cuttlepop-processing]",
-  enabled = only_gleba,
-  allow_decomposition = false,
-  allow_productivity = true,
-  energy_required = 0.5,
-  ingredients = {{type = "item", name = "cuttlepop-seed", amount = 1}},
-  results =
   {
-    {type = "item", name = "spoilage", amount = 4},
-    {type = "item", name = "iron-bacteria", amount = 2}
+    type = "recipe",
+    name = "cuttlepop-processing",
+    icon = "__wayward-seas__/graphics/icons/cuttlepop-processing.png",
+    category = "organic-or-hand-crafting",
+    subgroup = "agriculture-processes",
+    order = "a[seeds]-a-b[cuttlepop-processing]",
+    enabled = only_gleba,
+    allow_decomposition = false,
+    allow_productivity = true,
+    energy_required = 0.5,
+    ingredients = {{type = "item", name = "cuttlepop-seed", amount = 1}},
+    results =
+    {
+      {type = "item", name = "spoilage", amount = 4},
+      {type = "item", name = "iron-bacteria", amount = 2}
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 0.619, g = 0.518, b = 0.049, a = 1.000},
+      secondary = {r = 0.670, g = 0.556, b = 0.109, a = 1.000}
+    }
   },
-  crafting_machine_tint =
   {
-    primary = {r = 0.619, g = 0.518, b = 0.049, a = 1.000},
-  secondary = {r = 0.670, g = 0.556, b = 0.109, a = 1.000}
-  }
-},
+    type = "item",
+    name = "cut-water-cane",
+    localised_name = {"item-name.cut-water-cane"},
+    localised_description = {"item-description.cut-water-cane"},
+    icon = "__wayward-seas__/graphics/icons/water-cane-1.png",
+    pictures =
+    {
+      { size = 64, filename = "__wayward-seas__/graphics/icons/water-cane-1.png", scale = 0.5},
+      { size = 64, filename = "__wayward-seas__/graphics/icons/water-cane-2.png", scale = 0.5},
+      { size = 64, filename = "__wayward-seas__/graphics/icons/water-cane-3.png", scale = 0.5},
+    },
+    subgroup = "agriculture-processes",
+    order = "a[seeds]-a-c[cut-water-cane]",
+    plant_result = "water-cane-plant",
+    place_result = "water-cane-plant",
+    inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+    pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+    drop_sound = space_age_item_sounds.agriculture_inventory_move,
+    stack_size = 50,
+    weight = 1 * kg,
+    default_import_location = "gleba",
+    fuel_category = "chemical",
+    fuel_value = "2MJ"
+  },
+  {
+    type = "recipe",
+    name = "water-cane-separation",
+    icon = "__wayward-seas__/graphics/icons/water-cane-separation.png",
+    category = "organic-or-hand-crafting",
+    subgroup = "agriculture-processes",
+    order = "a[seeds]-a-c[water-cane-separation]",
+    enabled = only_gleba,
+    allow_decomposition = false,
+    allow_productivity = true,
+    energy_required = 0.5,
+    ingredients = {{type = "item", name = "cut-water-cane", amount = 2}},
+    results =
+    {
+      {type = "item", name = "wood", amount = 1}
+    },
+    crafting_machine_tint =
+    {
+      primary = {r = 0.619, g = 0.518, b = 0.049, a = 1.000},
+      secondary = {r = 0.670, g = 0.556, b = 0.109, a = 1.000}
+    }
+  },
 }
 
 if not only_gleba then
@@ -255,5 +302,9 @@ if not only_gleba then
   data.raw.technology["planet-discovery-gleba"].effects[3] = {
     type = "unlock-recipe",
     recipe = "cuttlepop-processing",
+  }
+  data.raw.technology["planet-discovery-gleba"].effects[4] = {
+    type = "unlock-recipe",
+    recipe = "water-cane-separation",
   }
 end

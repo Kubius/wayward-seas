@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.0
+
+  Changes:
+    - Water cane now yields cut water cane instead of wood, and cut water cane is used for replanting it.
+    - Wild water cane now yields two pieces of cut water cane instead of one wood; cultivated water cane yields three pieces at the same pace as before.
+    - Cut water cane has the same fuel value as wood. To get actual wood for crafting purposes, you can process the cane into wood at a 2:1 ratio (biochamber productivity permitted).
+    - Existing setups using wood solely for fuel should be largely unaffected, besides potential filter changes. Wood product manufacture will need larger adjustments.
+    - Above changes fix a bug with Lignumis compatibility where wood planting into water cane would override that mod's use of wood as a flooring.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.1
 
   Changes:
