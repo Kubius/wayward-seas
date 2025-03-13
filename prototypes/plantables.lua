@@ -55,7 +55,7 @@ sunnycomb_plant.flags = plant_flags
 sunnycomb_plant.hidden_in_factoriopedia = false
 sunnycomb_plant.factoriopedia_alternative = nil
 sunnycomb_plant.created_effect = nil
-sunnycomb_plant.harvest_emissions = {spores = 2}
+sunnycomb_plant.harvest_emissions = {spores = 1.2}
 sunnycomb_plant.agricultural_tower_tint =
 {
 	primary = {r = 0.619, g = 0.518, b = 0.049, a = 1.000},
@@ -87,7 +87,7 @@ cuttlepop_plant.flags = plant_flags
 cuttlepop_plant.hidden_in_factoriopedia = false
 cuttlepop_plant.factoriopedia_alternative = nil
 cuttlepop_plant.created_effect = nil
-cuttlepop_plant.harvest_emissions = {spores = 1}
+cuttlepop_plant.harvest_emissions = {spores = 0.6}
 cuttlepop_plant.agricultural_tower_tint =
 {
 	primary = {r = 0.769, g = 0.615, b = 0.823, a = 1.000},

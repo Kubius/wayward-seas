@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.2
+
+  Changes:
+    - Set of changes to improve defensive pacing against pentapods, particularly in Gleba starts that don't begin on an island.
+    - Researching rocket turrets and carbon fiber in Gleba starts has been reduced dramatically in cost and no longer requires space science. This can be disabled in config.
+    - Strafers/stompers evolve more slowly on Gleba starts (0% > 10% for them to appear at all, 10% > 30% for any medium, 60% > 70% for any big). Config can enable this for any start, weaken it, or disable it.
+    - Harvest emissions from cuttlepop and sunnycomb have been reduced by 40%, reducing the spores per net fruit production from 0.33 (slightly above vanilla crops' 0.3) to 0.2.
+    
+---------------------------------------------------------------------------------------------------
 Version: 0.7.1
 
   Changes:
