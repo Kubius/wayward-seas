@@ -62,7 +62,7 @@ sunnycomb_plant.agricultural_tower_tint =
 	secondary = {r = 0.670, g = 0.556, b = 0.109, a = 1.000}
 }
 sunnycomb_plant.minable.results = {
-	{type = "item", name = "sunnycomb-seed", amount_min = 5, amount_max = 9}
+	{type = "item", name = "sunnycomb-seed", amount = 7}
 }
 sunnycomb_plant.growth_ticks = 8 * minutes
 sunnycomb_plant.surface_conditions = { {property = "pressure", min = 2000, max = 2000} }
@@ -94,7 +94,7 @@ cuttlepop_plant.agricultural_tower_tint =
 	secondary = {r = 0.894, g = 0.784, b = 0.882, a = 1.000}
 }
 cuttlepop_plant.minable.results = {
-	{type = "item", name = "cuttlepop-seed", amount_min = 3, amount_max = 5}
+	{type = "item", name = "cuttlepop-seed", amount = 4}
 }
 cuttlepop_plant.growth_ticks = 4 * minutes
 cuttlepop_plant.surface_conditions = { {property = "pressure", min = 2000, max = 2000} }

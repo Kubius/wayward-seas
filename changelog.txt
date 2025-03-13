@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.1
+
+  Changes:
+    - Cuttlepop and sunnycomb yield is now a fixed number, to avoid agricultural towers harvesting crops they may sometimes not have adequate space for.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.7.0
 
   Changes:
