@@ -42,8 +42,8 @@ data:extend{
         type = "int-setting",
         name = "world_gen_revision",
         setting_type = "startup",
-        default_value = 2,
-        allowed_values = {1, 2},
+        default_value = 3,
+        allowed_values = {1, 2, 3},
         order = "c-f"
     },
     {

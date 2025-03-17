@@ -37,16 +37,44 @@ if settings.startup["soil_fertility_tweaks"].value then
                 basement_value = -0.5,\z
                 maximum_spot_basement_radius = 128}"
 
-    data.raw["noise-expression"]["gleba_fertile_spots_coastal"].expression = "max(min(1, gleba_starting_fertile * 4), min(exclude_middle, gleba_fertile_spots_coastal_raw) - \z
-        max(0, -(elevation + max(2, 2 * var('control:gleba_water:size')) ) / 5) - max(0, (elevation - max(10, 6 + 4 * var('control:gleba_water:size')) ) / 5))"
+
     data.raw["noise-expression"]["gleba_fertile_spots_coastal"].local_expressions["exclude_middle"] = "(distance / gleba_starting_area_multiplier / 150) - 2.2 + fuzz"
     data.raw["noise-expression"]["gleba_fertile_spots_coastal"].local_expressions["fuzz"] = "\z
         multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 80808, octaves = 2, input_scale = 1/16}"
 
     data.raw["noise-expression"]["gleba_fertile_solid"].expression = "abs(multioctave_noise{x = x, y = y, persistence = 0.7, seed0 = map_seed, seed1 = 2000000, octaves = 2, input_scale = 1/16}) * gleba_fertile_spots_coastal * max(2, 0.2 + 1.6 * sqrt(var('control:gleba_water:size')))"
+    if settings.startup["world_gen_revision"].value == 3 then
+        data.raw["noise-expression"]["gleba_fertile_spots_coastal"].expression = "max(min(1, gleba_starting_fertile * 4), min(exclude_middle, gleba_fertile_spots_coastal_raw) - \z
+        max(0, -(elevation + max(2, 0.5 * var('control:gleba_water:size')) ) / 5) - max(0, (elevation - max(10, 8 + 0.5 * var('control:gleba_water:size')) ) / 5))"
+    else
+        data.raw["noise-expression"]["gleba_fertile_spots_coastal"].expression = "max(min(1, gleba_starting_fertile * 4), min(exclude_middle, gleba_fertile_spots_coastal_raw) - \z
+        max(0, -(elevation + max(2, 2 * var('control:gleba_water:size')) ) / 5) - max(0, (elevation - max(10, 6 + 4 * var('control:gleba_water:size')) ) / 5))"
+    end
 end
 
-if settings.startup["world_gen_revision"].value == 2 then
+
+if settings.startup["world_gen_revision"].value == 3 then
+    data.raw["noise-expression"]["wayward_seas_lowstone"].expression = "gleba_select(gleba_elevation_common+15, 0, 8, 0.5, 0, 1)"
+    data.raw["noise-expression"]["gleba_starting_area_multiplier"].expression = "0.25"
+    data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["starting_main_blend"] = "max(peaks * 24 + adj_water_depth * 2 - isolation_ring * iso_ring_factor, starting_area - (distance / (70 * gleba_starting_area_multiplier)) - isolation_ring * 2)"
+    data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["adj_water_depth"] = "max(1 - var('control:gleba_water:size'),0) * 5 - var('control:gleba_water:size')"
+    data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["isolation_ring"] = "abs(0.5 * iso_ring_bandwidth - abs(0.5 * iso_ring_bandwidth - iso_ring_bounds))"
+    data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["iso_ring_factor"] = "min(1.2, var('control:gleba_water:size') * 1.2)"
+    data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["iso_ring_bounds"] = "clamp(max(0,distance-iso_ring_dist),0,iso_ring_bandwidth)"
+    data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["iso_ring_bandwidth"] = "70"
+    data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["iso_ring_dist"] = "1200 * gleba_starting_area_multiplier"
+    data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["starting_highland_main"] = "starting_spot_at_angle{ angle = gleba_starting_angle + 95 * gleba_starting_direction,\z
+                                                            distance = 100 * 0.5,\z
+                                                            radius = 130 * 0.5,\z
+                                                            x_distortion = gleba_wobble_x * 15,\z
+                                                            y_distortion = gleba_wobble_x * 15}"
+    data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["starting_highland_small"] = "starting_spot_at_angle{angle = gleba_starting_angle + 40 * gleba_starting_direction,\z
+                                                            distance = 130 * 0.5,\z
+                                                            radius = 65 * 0.5,\z
+                                                            x_distortion = gleba_wobble_x * 15,\z
+                                                            y_distortion = gleba_wobble_x * 15}"
+
+elseif settings.startup["world_gen_revision"].value == 2 then
     data.raw["noise-expression"]["gleba_starting_area_multiplier"].expression = "0.25"
     data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["ridges"] = "-(wayward_seas_gleba_prep + 1 + 0.35 * sqrt(var('control:gleba_water:size')))"
     data.raw["noise-expression"]["gleba_elevation_common"].local_expressions["ridge_terrace"] = "terrace{value = min(200 + 100 * (var('control:gleba_water:size') ^ 2), 300, 110 + ridges * 1000), offset = 60, width = 60 * max(4 - var('control:gleba_water:size')*3,1), strength = min(0.2,0.5 * var('control:gleba_water:size'))}"

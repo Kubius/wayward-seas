@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.0
+
+  Changes:
+    - Implemented a new world generation revision that entirely discards the ridge element of generation in favor of pure island peaks.
+    - This is a breaking update, world generation revision 3; the previous version remains available in settings for backwards compatibility.
+    - If you already had the mod installed, you may need to change to revision 3 manually to receive the new generation.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.7.2
 
   Changes:
