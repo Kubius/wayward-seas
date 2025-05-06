@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.1
+
+  Changes:
+    - Added the 'organic-or-assembling' category to assembling machine 1 alongside 'organic-or-hand-crafting' (both are minor adjustments to make clean starts easier).
+    - Added documentation for source publication.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.8.0
 
   Changes:
