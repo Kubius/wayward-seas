@@ -15,6 +15,7 @@ if mods["any-planet-start"] and settings.startup["aps-planet"].value == "gleba" 
             table.remove(miltech,indexer)
         end
     end
+    table.insert(miltech,"resin-tech")
     do_extra_start_tweaks = true
 elseif mods["planet-picker"] then
     do_extra_start_tweaks = true

@@ -60,4 +60,11 @@ data:extend{
         default_value = true,
         order = "c-h"
     },
+    {
+        type = "bool-setting",
+        name = "do_ws_start_checkup",
+        setting_type = "startup",
+        default_value = true,
+        order = "c-z"
+    },
 }

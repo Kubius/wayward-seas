@@ -17,7 +17,7 @@ end
 
 script.on_event(e.on_player_created, function(event)
     local player = game.get_player(event.player_index) --[[@as LuaPlayer]]
-    if not storage.gleba_start_checkup_done then
+    if settings.startup["do_ws_start_checkup"].value == true and (not storage.gleba_start_checkup_done) then
       if game.is_multiplayer() then
         game.print(gleba_start_checkup())
       else

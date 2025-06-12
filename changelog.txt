@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.2
+
+  Changes:
+    - Added a setting to disable the startup check for recommended mod pairings.
+    - Gleba starts with Any Planet Start: Military science now has resin liquefaction as a prerequisite to improve discoverability of alternate grenade production.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.8.1
 
   Changes:
