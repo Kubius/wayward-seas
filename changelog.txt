@@ -1,11 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.3
-  Make :
-  - Fr_Dae
+  Author:
+    - Fr_Dae
   Changes:
-    - Added Fr localisation .
+    - Added French localization.
+    - Added Russian localization.
     - info.json cleanup
-    - add Ru loc
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.2
 
