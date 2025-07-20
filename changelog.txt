@@ -1,7 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.3
+
   Author:
     - Fr_Dae
+
   Changes:
     - Added French localization.
     - Added Russian localization.
@@ -37,7 +39,7 @@ Version: 0.7.2
     - Researching rocket turrets and carbon fiber in Gleba starts has been reduced dramatically in cost and no longer requires space science. This can be disabled in config.
     - Strafers/stompers evolve more slowly on Gleba starts (0% > 10% for them to appear at all, 10% > 30% for any medium, 60% > 70% for any big). Config can enable this for any start, weaken it, or disable it.
     - Harvest emissions from cuttlepop and sunnycomb have been reduced by 40%, reducing the spores per net fruit production from 0.33 (slightly above vanilla crops' 0.3) to 0.2.
-    
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.1
 
