@@ -12,12 +12,18 @@ data:extend{
         type = "noise-expression",
         name = "wayward_seas_lowstone",
         expression = "gleba_select(gleba_elevation_common+14, 0, 7, 0.5, 0, 1)"
+    },
+    {
+        type = "noise-expression",
+        name = "wayward_seas_stonemod",
+        expression = "min(distance / 130, 8)"
     }
 }
 
 data.raw["noise-expression"]["gleba_spawner"].expression = "max(0.01 * gleba_starting_enemies, max(min(0.02, enemy_autoplace_base(0, 8)), min(0.001, gleba_fertile_spots_coastal * 5000 - gleba_biome_mask_green * 25000)) * (distance > 500)) * gleba_above_deep_water_mask"
 data.raw["noise-expression"]["gleba_starting_enemies"].expression = "0"
-data.raw["noise-expression"]["gleba_stone_richness"].expression = "1000 * max(starting, gleba_simple_spot(1000, 12 * size ^ 0.5, 220 / frequency ^ 0.5, 1) * max(gleba_highland*5, gleba_midland_aux_2, wayward_seas_lowstone + wayward_seas_lowstone * 0.5 * (gleba_elevation_common < gleba_deep_water_level))) * richness / size"
+data.raw["noise-expression"]["gleba_stone_richness"].expression = "1000 * max(starting, gleba_simple_spot(1000, 12 * size ^ 0.5, 220 / frequency ^ 0.5, 1) * \z
+                max(gleba_highland*5, gleba_midland_aux_2, wayward_seas_lowstone + wayward_seas_lowstone * 0.5 * (gleba_elevation_common < gleba_deep_water_level))) * richness * wayward_seas_stonemod / size"
 
 if settings.startup["soil_fertility_tweaks"].value then
     data.raw["noise-expression"]["gleba_fertile_spots_coastal_raw"].expression = "spot_noise{ x = x + wobble_noise_x * 15,\z
