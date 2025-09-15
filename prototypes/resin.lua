@@ -65,7 +65,8 @@ data:extend{
       {type = "item", name = "iron-plate", amount = 5},
       {type = "fluid", name = "gleba-resin", amount = 500}
     },
-    results = {{type="item", name="grenade", amount=1}}
+    results = {{type="item", name="grenade", amount=1}},
+    auto_recycle = false,
   },
   {
     type = "recipe",
@@ -97,6 +98,7 @@ data:extend{
       {type = "fluid", name = "gleba-resin", amount = 200}
     },
     results = {{type="item", name="explosives", amount=2}},
+    auto_recycle = false,
     allow_productivity = true
   },
   {
@@ -120,7 +122,8 @@ data:extend{
       {type = "item", name = "iron-plate", amount = 3},
       {type = "fluid", name = "gleba-resin", amount = 150}
     },
-    results = {{type="item", name="rocket", amount=1}}
+    results = {{type="item", name="rocket", amount=1}},
+    auto_recycle = false
   },
   {
     type = "technology",
