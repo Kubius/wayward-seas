@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.5
+
+  Changes:
+    - Resin recipes now have auto_recycle set to false to avoid potential disruption of recycling chains.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.8.4
   Changes:
     - Offshore stone deposits on Gleba now grow richer based on distance from the starting area (at maximum richness, typical deposits range from 900,000 to 1.5 million stone).
