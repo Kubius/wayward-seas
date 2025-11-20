@@ -23,19 +23,19 @@ data:extend{
         order = "c-c"
     },
     {
-        type = "bool-setting",
-        name = "enable_excav_brace",
-        setting_type = "startup",
-        default_value = false,
-        order = "c-d"
-    },
-    {
         type = "int-setting",
         name = "excav_brace_yield",
         setting_type = "startup",
         default_value = 40,
         minimum_value = 10,
         maximum_value = 100,
+        order = "c-d"
+    },
+    {
+        type = "bool-setting",
+        name = "deep_excav_brace",
+        setting_type = "startup",
+        default_value = false,
         order = "c-e"
     },
     {

@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.6
+
+  Changes:
+    - The excavation brace has been reworked; its default function is now to provide a way to flatten Gleba lowland tiles for shallows cultivation.
+    - The old functionality of the excavation brace may be re-activated by config option.
+    - Associated descriptions have been updated by machine translation, attempting to retain consistency with existing translation.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.8.5
 
   Changes:
