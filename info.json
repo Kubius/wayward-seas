@@ -6,7 +6,7 @@
   "author": "Kubius",
   "homepage": "https://github.com/Kubius/wayward-seas", 
 
-  "version": "0.8.6",
+  "version": "0.8.7",
   "factorio_version": "2.0",
   "space_travel_required": true,
   "dependencies": [
@@ -15,6 +15,7 @@
     "? dredgeworks >= 0.7.3",
     "? any-planet-start >= 1.1.4",
     "? cargo-ships >= 1.0.13",
-    "? aai-vehicles-ironclad"
+    "? aai-vehicles-ironclad",
+    "! alien-biomes"
   ]
 }

@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.7
+
+  Changes:
+    - Marked Alien Biomes as incompatible due to its ongoing issue of inhibiting Gleba water-plant generation.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.8.6
 
   Changes:
