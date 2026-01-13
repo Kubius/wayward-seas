@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.8
+
+  Changes:
+    - Downgraded Alien Biomes incompatibility from a mandatory prohibition to a start-of-game warning.
+    - French and Russian localizations for this warning have been created by machine translation.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.8.7
 
   Changes:

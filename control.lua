@@ -2,6 +2,9 @@ local crash_site = require("crash-site")
 local e = defines.events
 
 local gleba_start_checkup = function()
+  if script.active_mods["alien-biomes"] then
+    return {"wayward-seas-intro.alien-biomes-warning"}
+  end
   if not script.active_mods["cargo-ships"] then
     if not script.active_mods["dredgeworks"] then
       return {"wayward-seas-intro.no-recommended-mods"}
