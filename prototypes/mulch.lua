@@ -45,7 +45,7 @@ data:extend{
     name = "lakebed-mulch",
     energy_required = 0.5,
     enabled = false,
-    category = "organic-or-hand-crafting",
+    categories = {"organic","crafting"},
     ingredients =
     {
       {type = "item", name = "stone", amount = 10},

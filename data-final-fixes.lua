@@ -3,9 +3,6 @@ if settings.startup["enable_ws_worldgen"].value then
 end
 require("__wayward-seas__/prototypes/placement_adjust")
 
-table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories,"organic-or-hand-crafting")
-table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories,"organic-or-assembling")
-
 local do_extra_start_tweaks = false
 
 if mods["any-planet-start"] and settings.startup["aps-planet"].value == "gleba" then

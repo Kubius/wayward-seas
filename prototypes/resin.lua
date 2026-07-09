@@ -12,7 +12,7 @@ data:extend{
   {
     type = "recipe",
     name = "gleba-resin",
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "fluid-recipes",
     order = "q[gleba-resin]",
     energy_required = 3,
@@ -59,7 +59,7 @@ data:extend{
       }
     },
     energy_required = 8,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
       {type = "item", name = "iron-plate", amount = 5},
@@ -72,7 +72,7 @@ data:extend{
     type = "recipe",
     name = "resin-explosives",
     icon = "__wayward-seas__/graphics/icons/resin-explosives.png",
-    category = "organic-or-chemistry",
+    categories = {"organic","chemistry"},
     order = "b[chemistry]-e[explosives]-b",
     crafting_machine_tint =
     {
@@ -116,7 +116,7 @@ data:extend{
       }
     },
     energy_required = 8,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
       {type = "item", name = "iron-plate", amount = 3},
