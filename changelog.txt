@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+
+  Changes:
+    - Reduced volatile resin quantities in production/consumption by 10x to make it less absurd for flamethrowers.
+    - Reduced input water for volatile resin creation from 500 to 100, to pair with the above. Other inputs unchanged.
+    - Cuttlepop pods have been reduced in fuel value to the originally-intended 2MJ, returning water cane to being the best water fuel crop.
+    - Increased planted water cane's collision box to match the width of its selection box, reducing maximum manual planting density a bit.
+    - Adjusted the excavation brace's research pathing in Gleba start scenarios with Any Planet Start.
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 
   Changes:

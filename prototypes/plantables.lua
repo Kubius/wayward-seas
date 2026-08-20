@@ -129,6 +129,7 @@ watercane_plant.minable.results = {
 }
 watercane_plant.growth_ticks = 135 * seconds
 watercane_plant.surface_conditions = { {property = "pressure", min = 2000, max = 2000} }
+watercane_plant.collision_box = {{-0.3, -0.3}, {0.3, 0.3}}
 watercane_plant.tile_buildability_rules = {
   {
     area = {{-0.55, -0.55}, {0.55, 0.55}},
@@ -220,7 +221,7 @@ data:extend{
     weight = 1 * kg,
     default_import_location = "gleba",
     fuel_category = "chemical",
-    fuel_value = "3MJ"
+    fuel_value = "2MJ"
   },
   {
     type = "recipe",

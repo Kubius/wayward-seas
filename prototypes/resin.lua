@@ -29,12 +29,12 @@ data:extend{
     {
       {type = "item", name = "sunnycomb-seed", amount = 1},
       {type = "item", name = "wood", amount = 1},
-      {type = "fluid", name = "water", amount = 500},
+      {type = "fluid", name = "water", amount = 100},
       {type = "fluid", name = "steam", amount = 100}
     },
     results =
     {
-      {type = "fluid", name = "gleba-resin", amount = 250}
+      {type = "fluid", name = "gleba-resin", amount = 25}
     },
     allow_productivity = true,
     crafting_machine_tint =
@@ -63,7 +63,7 @@ data:extend{
     ingredients =
     {
       {type = "item", name = "iron-plate", amount = 5},
-      {type = "fluid", name = "gleba-resin", amount = 500}
+      {type = "fluid", name = "gleba-resin", amount = 50}
     },
     results = {{type="item", name="grenade", amount=1}},
     auto_recycle = false
@@ -95,7 +95,7 @@ data:extend{
     {
       {type = "item", name = "sulfur", amount = 1},
       {type = "item", name = "carbon", amount = 2},
-      {type = "fluid", name = "gleba-resin", amount = 200}
+      {type = "fluid", name = "gleba-resin", amount = 20}
     },
     results = {{type="item", name="explosives", amount=2}},
     allow_productivity = true,
@@ -120,7 +120,7 @@ data:extend{
     ingredients =
     {
       {type = "item", name = "iron-plate", amount = 3},
-      {type = "fluid", name = "gleba-resin", amount = 150}
+      {type = "fluid", name = "gleba-resin", amount = 15}
     },
     results = {{type="item", name="rocket", amount=1}},
     auto_recycle = false

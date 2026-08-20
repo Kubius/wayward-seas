@@ -13,14 +13,17 @@ local excavation_brace_prereq = {"lakebed-mulch","concrete","agricultural-scienc
 
 if mods["any-planet-start"] then
   local planet = settings.startup["aps-planet"].value
-  if planet == "gleba" and settings.startup["deep_excav_brace"].value then
-    excavation_brace_research = {
-      {"automation-science-pack", 1},
-      {"logistic-science-pack", 1},
-      {"military-science-pack", 1},
-    }
-    excavation_brace_ticks = 250
-    excavation_brace_prereq = {"lakebed-mulch","concrete","military-science-pack"}
+  if planet == "gleba" then
+    excavation_brace_prereq = {"lakebed-mulch","concrete","space-science-pack"}
+    if settings.startup["deep_excav_brace"].value then
+      excavation_brace_research = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1},
+      }
+      excavation_brace_ticks = 250
+      excavation_brace_prereq = {"lakebed-mulch","concrete","military-science-pack"}
+    end
   end
 end
 

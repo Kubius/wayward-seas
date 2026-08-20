@@ -6,7 +6,7 @@
   "author": "Kubius",
   "homepage": "https://github.com/Kubius/wayward-seas", 
 
-  "version": "1.0.0",
+  "version": "1.0.1",
   "factorio_version": "2.1",
   "space_travel_required": true,
   "dependencies": [
