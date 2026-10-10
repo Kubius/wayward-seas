@@ -170,7 +170,7 @@ data:extend{
     stack_size = 50,
     weight = 1 * kg,
     default_import_location = "gleba",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "2MJ"
   },
 -- mulch the propagule, get spoilage and bacteria
@@ -220,7 +220,7 @@ data:extend{
     stack_size = 50,
     weight = 1 * kg,
     default_import_location = "gleba",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "2MJ"
   },
   {
@@ -268,7 +268,7 @@ data:extend{
     stack_size = 50,
     weight = 1 * kg,
     default_import_location = "gleba",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "2MJ"
   },
   {
